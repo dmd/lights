@@ -26,8 +26,8 @@ buttons = {
     "y": 15,
     "ml": 10,
     "mr": 9,
-    "sl": 23,
-    "sr": 24}
+    "sl": 11,
+    "sr": 8}
 
 for (k,v) in leds.items():
     leds[k] = LED(v)
