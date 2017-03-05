@@ -12,10 +12,10 @@ leds = {
     "y1": 24,
     "g1": 25,
     "b1": 5,
-    "w1": 6,
-    "rgbr": 12,
-    "rgbg": 13,
-    "rgbb": 19,
+#    "w1": 6,
+#    "rgbr": 12,
+#    "rgbg": 13,
+#    "rgbb": 19,
     "cf": 26,
     "cs": 20}
 
@@ -36,3 +36,9 @@ for (k,v) in buttons.items():
     buttons[k] = Button(v)
 
     
+while True:
+    for l,v in leds.items():
+        v.on()
+        print l
+        raw_input()
+        v.off()
