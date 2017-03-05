@@ -29,4 +29,10 @@ buttons = {
     "sl": 23,
     "sr": 24}
 
+for (k,v) in leds.items():
+    leds[k] = LED(v)
 
+for (k,v) in buttons.items():
+    buttons[k] = Button(v)
+
+    
