@@ -27,11 +27,11 @@ leds = {
 
 buttons = {
     "r": 2,
-#    "g": 3,
+    "g": 3,
     "w": 14,
     "y": 15,
 #    "ml": 10,
-#    "mr": 9,
+    "mr": 9,
     "sl": 11,
     "sr": 8}
 
@@ -66,7 +66,8 @@ def alloff():
 onoff('r','r0', 'r1')
 onoff('w','cf', 'w0')
 onoff('y','y0', 'y1')
-onoff('sl','g0', 'g1')
+onoff('g','g0', 'g1')
+#onoff('sl','g0', 'g1')
 #onoff('sr','b0', 'b1')
 
 buttons['sr'].when_pressed = allon
